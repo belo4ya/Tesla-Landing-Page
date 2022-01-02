@@ -426,10 +426,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 *, ::before, ::after {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
-  --tw-ring-offset-shadow: 0 0 #0000;
-  --tw-ring-shadow: 0 0 #0000;
-  --tw-shadow: 0 0 #0000;
-  --tw-shadow-colored: 0 0 #0000;
 }
 
 .fixed {
@@ -464,10 +460,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100vh;
 }
 
-.h-64 {
-  height: 16rem;
-}
-
 .h-\[54px\] {
   height: 54px;
 }
@@ -482,10 +474,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[40px\] {
   height: 40px;
-}
-
-.w-64 {
-  width: 16rem;
 }
 
 .w-\[245px\] {
@@ -516,12 +504,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }
 
-.space-x-12 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(3rem * var(--tw-space-x-reverse));
-  margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-x-\[25px\] > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(25px * var(--tw-space-x-reverse));
@@ -532,16 +514,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.75rem;
 }
 
-.rounded {
-  border-radius: 0.25rem;
-}
-
 .rounded-2xl {
   border-radius: 1rem;
-}
-
-.border {
-  border-width: 1px;
 }
 
 .border-b {
@@ -553,37 +527,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(92 93 97 / var(--tw-border-opacity));
 }
 
-.bg-violet-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(221 214 254 / var(--tw-bg-opacity));
-}
-
-.bg-pink-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(190 24 93 / var(--tw-bg-opacity));
-}
-
-.bg-pink-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(219 39 119 / var(--tw-bg-opacity));
-}
-
-.bg-pink-600\/50 {
-  background-color: rgb(219 39 119 / 0.5);
-}
-
-.bg-\[\#0586B6\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(5 134 182 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#181a1f\] {
   --tw-bg-opacity: 1;
   background-color: rgb(24 26 31 / var(--tw-bg-opacity));
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-80 {
   --tw-bg-opacity: 0.8;
+}
+
+.bg-opacity-\[65\%\] {
+  --tw-bg-opacity: 65%;
+}
+
+.bg-model-3 {
+  background-image: url("../img/model-3.jpeg");
+}
+
+.bg-model-s {
+  background-image: url("../img/model-s.jpeg");
 }
 
 .bg-cover {
@@ -594,8 +561,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-position: center;
 }
 
-.p-10 {
-  padding: 2.5rem;
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .px-\[8px\] {
@@ -640,11 +607,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: center;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .text-\[14px\] {
   font-size: 14px;
 }
@@ -677,11 +639,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   letter-spacing: 0.05em;
 }
 
-.text-blue-400 {
-  --tw-text-opacity: 1;
-  color: rgb(96 165 250 / var(--tw-text-opacity));
-}
-
 .text-\[\#181b21\] {
   --tw-text-opacity: 1;
   color: rgb(24 27 33 / var(--tw-text-opacity));
@@ -700,12 +657,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.shadow-xl {
-  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .transition {
@@ -741,4 +692,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:text-\[\#181b21\]:hover {
   --tw-text-opacity: 1;
   color: rgb(24 27 33 / var(--tw-text-opacity));
+}
+
+@media (orientation: portrait) {
+  .portrait\:bg-mobile-model-3 {
+    background-image: url("../img/mobile-model-3.jpeg");
+  }
+
+  .portrait\:bg-mobile-model-s {
+    background-image: url("../img/mobile-model-s.jpeg");
+  }
 }
