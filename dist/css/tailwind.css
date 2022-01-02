@@ -451,6 +451,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: -70px;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .m-\[8px\] {
   margin: 8px;
 }
@@ -505,6 +513,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 28px;
 }
 
+.h-\[70px\] {
+  height: 70px;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
 .w-\[245px\] {
   width: 245px;
 }
@@ -523,6 +539,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[38px\] {
   width: 38px;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 @-webkit-keyframes bounce {
@@ -642,6 +662,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url("../img/model-s.jpeg");
 }
 
+.bg-model-y {
+  background-image: url("../img/model-y.jpeg");
+}
+
+.bg-model-x {
+  background-image: url("../img/model-x.jpeg");
+}
+
+.bg-solar-panels {
+  background-image: url("../img/solar-panels.jpeg");
+}
+
+.bg-solar-roof {
+  background-image: url("../img/solar-roof.jpeg");
+}
+
+.bg-accessories {
+  background-image: url("../img/accessories.jpeg");
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -707,6 +747,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-\[16vh\] {
   padding-top: 16vh;
+}
+
+.pb-\[100px\] {
+  padding-bottom: 100px;
+}
+
+.pb-\[110px\] {
+  padding-bottom: 110px;
+}
+
+.pb-\[7px\] {
+  padding-bottom: 7px;
+}
+
+.pb-\[4px\] {
+  padding-bottom: 4px;
 }
 
 .text-center {
@@ -821,6 +877,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-left: 25px;
   }
 
+  .tablet\:inline {
+    display: inline;
+  }
+
   .tablet\:h-\[32px\] {
     height: 32px;
   }
@@ -849,9 +909,24 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-left: calc(25px * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .tablet\:space-x-\[14px\] > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(14px * var(--tw-space-x-reverse));
+    margin-left: calc(14px * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .tablet\:bg-opacity-100 {
+    --tw-bg-opacity: 1;
+  }
+
   .tablet\:py-\[4px\] {
     padding-top: 4px;
     padding-bottom: 4px;
+  }
+
+  .tablet\:py-\[8px\] {
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 
   .tablet\:pr-\[16px\] {
@@ -864,6 +939,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .tablet\:pb-\[40px\] {
     padding-bottom: 40px;
+  }
+
+  .tablet\:pb-\[60px\] {
+    padding-bottom: 60px;
+  }
+
+  .tablet\:pb-\[70px\] {
+    padding-bottom: 70px;
+  }
+
+  .tablet\:pb-\[110px\] {
+    padding-bottom: 110px;
+  }
+
+  .tablet\:pb-0 {
+    padding-bottom: 0px;
   }
 
   .tablet\:text-\[13px\] {
@@ -958,6 +1049,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-top: calc(13vh + 20px);
   }
 
+  .desktop\:pb-\[70px\] {
+    padding-bottom: 70px;
+  }
+
   .desktop\:text-\[12px\] {
     font-size: 12px;
   }
@@ -987,12 +1082,44 @@ Ensure the default browser behavior of the `hidden` attribute.
   .portrait\:bg-mobile-model-s {
     background-image: url("../img/mobile-model-s.jpeg");
   }
+
+  .portrait\:bg-mobile-model-y {
+    background-image: url("../img/mobile-model-y.jpeg");
+  }
+
+  .portrait\:bg-mobile-model-x {
+    background-image: url("../img/mobile-model-x.jpeg");
+  }
+
+  .portrait\:bg-mobile-solar-panels {
+    background-image: url("../img/mobile-solar-panels.jpeg");
+  }
+
+  .portrait\:bg-mobile-solar-roof {
+    background-image: url("../img/mobile-solar-roof.jpeg");
+  }
+
+  .portrait\:bg-mobile-accessories {
+    background-image: url("../img/mobile-accessories.jpeg");
+  }
 }
 
 @media (min-width: 600px) {
   @media (orientation: portrait) {
     .tablet\:portrait\:pb-\[78px\] {
       padding-bottom: 78px;
+    }
+  }
+
+  @media (orientation: portrait) {
+    .tablet\:portrait\:pb-\[90px\] {
+      padding-bottom: 90px;
+    }
+  }
+
+  @media (orientation: portrait) {
+    .tablet\:portrait\:pb-\[120px\] {
+      padding-bottom: 120px;
     }
   }
 }
