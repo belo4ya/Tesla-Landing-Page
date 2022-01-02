@@ -1,6 +1,9 @@
 module.exports = {
     content: ["./dist/**/*.{html,js}"],
     theme: {
+        fontFamily: {
+            'sans': ['Gotham'],
+        },
         screens: {
             'tablet': '600px',
             'desktop': '1200px',

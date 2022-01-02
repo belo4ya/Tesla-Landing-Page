@@ -42,7 +42,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Gotham;
   /* 4 */
 }
 
@@ -463,14 +463,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin: 8px;
 }
 
-.my-\[16px\] {
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-
 .mx-\[8px\] {
   margin-left: 8px;
   margin-right: 8px;
+}
+
+.my-\[16px\] {
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .inline-block {
@@ -485,12 +485,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
-.h-\[54px\] {
-  height: 54px;
+.h-\[60px\] {
+  height: 60px;
 }
 
 .h-\[30px\] {
@@ -501,24 +497,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 32px;
 }
 
-.h-\[40px\] {
-  height: 40px;
-}
-
-.h-\[60px\] {
-  height: 60px;
-}
-
 .h-\[28px\] {
   height: 28px;
 }
 
-.h-\[70px\] {
-  height: 70px;
+.h-screen {
+  height: 100vh;
 }
 
-.h-6 {
-  height: 1.5rem;
+.h-\[40px\] {
+  height: 40px;
+}
+
+.h-\[70px\] {
+  height: 70px;
 }
 
 .w-\[245px\] {
@@ -529,20 +521,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 120px;
 }
 
-.w-\[256px\] {
-  width: 256px;
-}
-
 .w-full {
   width: 100%;
 }
 
 .w-\[38px\] {
   width: 38px;
-}
-
-.w-6 {
-  width: 1.5rem;
 }
 
 @-webkit-keyframes bounce {
@@ -594,12 +578,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }
 
-.space-x-\[25px\] > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(25px * var(--tw-space-x-reverse));
-  margin-left: calc(25px * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-y-\[16px\] > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(16px * calc(1 - var(--tw-space-y-reverse)));
@@ -608,10 +586,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded-2xl {
-  border-radius: 1rem;
 }
 
 .rounded-full {
@@ -627,6 +601,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(92 93 97 / var(--tw-border-opacity));
 }
 
+.bg-\[\#7396ad\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(115 150 173 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#181a1f\] {
   --tw-bg-opacity: 1;
   background-color: rgb(24 26 31 / var(--tw-bg-opacity));
@@ -637,9 +616,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#7396ad\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(115 150 173 / var(--tw-bg-opacity));
+.bg-opacity-40 {
+  --tw-bg-opacity: 0.4;
 }
 
 .bg-opacity-80 {
@@ -650,20 +628,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 65%;
 }
 
-.bg-opacity-40 {
-  --tw-bg-opacity: 0.4;
-}
-
-.bg-model-3 {
-  background-image: url("../img/model-3.jpeg");
-}
-
 .bg-model-s {
   background-image: url("../img/model-s.jpeg");
 }
 
 .bg-model-y {
   background-image: url("../img/model-y.jpeg");
+}
+
+.bg-model-3 {
+  background-image: url("../img/model-3.jpeg");
 }
 
 .bg-model-x {
@@ -709,8 +683,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 20px;
 }
 
-.pl-\[32px\] {
-  padding-left: 32px;
+.pl-\[8px\] {
+  padding-left: 8px;
 }
 
 .pr-\[8px\] {
@@ -725,36 +699,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 32px;
 }
 
-.pt-\[calc\(13vh\+20px\)\] {
-  padding-top: calc(13vh + 20px);
+.pt-\[16vh\] {
+  padding-top: 16vh;
 }
 
-.pb-\[55px\] {
-  padding-bottom: 55px;
+.pb-\[110px\] {
+  padding-bottom: 110px;
 }
 
 .pb-\[8px\] {
   padding-bottom: 8px;
 }
 
-.pl-\[8px\] {
-  padding-left: 8px;
-}
-
-.pb-\[120px\] {
-  padding-bottom: 120px;
-}
-
-.pt-\[16vh\] {
-  padding-top: 16vh;
-}
-
 .pb-\[100px\] {
   padding-bottom: 100px;
 }
 
-.pb-\[110px\] {
-  padding-bottom: 110px;
+.pb-\[120px\] {
+  padding-bottom: 120px;
 }
 
 .pb-\[7px\] {
@@ -771,10 +733,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-\[14px\] {
   font-size: 14px;
-}
-
-.text-\[42px\] {
-  font-size: 42px;
 }
 
 .text-\[12px\] {
@@ -795,10 +753,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .uppercase {
   text-transform: uppercase;
-}
-
-.leading-\[1\.15\] {
-  line-height: 1.15;
 }
 
 .leading-normal {
@@ -885,12 +839,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 32px;
   }
 
-  .tablet\:w-\[256px\] {
-    width: 256px;
-  }
-
   .tablet\:w-auto {
     width: auto;
+  }
+
+  .tablet\:w-\[256px\] {
+    width: 256px;
   }
 
   .tablet\:flex-row {
@@ -901,12 +855,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
-  }
-
-  .tablet\:space-x-\[25px\] > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(25px * var(--tw-space-x-reverse));
-    margin-left: calc(25px * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .tablet\:space-x-\[14px\] > :not([hidden]) ~ :not([hidden]) {
@@ -929,24 +877,20 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-bottom: 8px;
   }
 
-  .tablet\:pr-\[16px\] {
-    padding-right: 16px;
-  }
-
   .tablet\:pl-\[16px\] {
     padding-left: 16px;
   }
 
-  .tablet\:pb-\[40px\] {
-    padding-bottom: 40px;
-  }
-
-  .tablet\:pb-\[60px\] {
-    padding-bottom: 60px;
+  .tablet\:pr-\[16px\] {
+    padding-right: 16px;
   }
 
   .tablet\:pb-\[70px\] {
     padding-bottom: 70px;
+  }
+
+  .tablet\:pb-\[60px\] {
+    padding-bottom: 60px;
   }
 
   .tablet\:pb-\[110px\] {
@@ -955,6 +899,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .tablet\:pb-0 {
     padding-bottom: 0px;
+  }
+
+  .tablet\:pb-\[100px\] {
+    padding-bottom: 100px;
+  }
+
+  .tablet\:pb-\[50px\] {
+    padding-bottom: 50px;
   }
 
   .tablet\:text-\[13px\] {
@@ -991,82 +943,20 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 54px;
   }
 
-  .desktop\:h-\[32px\] {
-    height: 32px;
-  }
-
-  .desktop\:w-\[256px\] {
-    width: 256px;
-  }
-
-  .desktop\:w-auto {
-    width: auto;
-  }
-
-  .desktop\:flex-row {
-    flex-direction: row;
-  }
-
-  .desktop\:space-x-\[25px\] > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(25px * var(--tw-space-x-reverse));
-    margin-left: calc(25px * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .desktop\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(0px * var(--tw-space-y-reverse));
-  }
-
-  .desktop\:rounded-2xl {
-    border-radius: 1rem;
-  }
-
-  .desktop\:py-\[4px\] {
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-
-  .desktop\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
   .desktop\:pl-\[32px\] {
     padding-left: 32px;
-  }
-
-  .desktop\:pr-\[32px\] {
-    padding-right: 32px;
-  }
-
-  .desktop\:pb-\[55px\] {
-    padding-bottom: 55px;
   }
 
   .desktop\:pt-\[calc\(13vh\+20px\)\] {
     padding-top: calc(13vh + 20px);
   }
 
-  .desktop\:pb-\[70px\] {
-    padding-bottom: 70px;
-  }
-
-  .desktop\:text-\[12px\] {
-    font-size: 12px;
-  }
-
-  .desktop\:text-\[14px\] {
-    font-size: 14px;
+  .desktop\:pb-\[55px\] {
+    padding-bottom: 55px;
   }
 
   .desktop\:text-\[42px\] {
     font-size: 42px;
-  }
-
-  .desktop\:leading-\[1\.15\] {
-    line-height: 1.15;
   }
 
   .desktop\:tracking-wider {
@@ -1075,16 +965,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (orientation: portrait) {
-  .portrait\:bg-mobile-model-3 {
-    background-image: url("../img/mobile-model-3.jpeg");
-  }
-
   .portrait\:bg-mobile-model-s {
     background-image: url("../img/mobile-model-s.jpeg");
   }
 
   .portrait\:bg-mobile-model-y {
     background-image: url("../img/mobile-model-y.jpeg");
+  }
+
+  .portrait\:bg-mobile-model-3 {
+    background-image: url("../img/mobile-model-3.jpeg");
   }
 
   .portrait\:bg-mobile-model-x {
@@ -1106,14 +996,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 @media (min-width: 600px) {
   @media (orientation: portrait) {
-    .tablet\:portrait\:pb-\[78px\] {
-      padding-bottom: 78px;
+    .tablet\:portrait\:pb-\[90px\] {
+      padding-bottom: 90px;
     }
   }
 
   @media (orientation: portrait) {
-    .tablet\:portrait\:pb-\[90px\] {
-      padding-bottom: 90px;
+    .tablet\:portrait\:pb-\[78px\] {
+      padding-bottom: 78px;
     }
   }
 
